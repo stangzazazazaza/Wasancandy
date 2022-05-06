@@ -1,30 +1,83 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view/>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+  
 </template>
+<style>    
+  @import "assets/css/bootstrap/css/bootstrap.min.css";  
+  @import "assets/css/css/style.css";
+  @import "assets/css/fontawesome/css/all.css";
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  #app {
+    
+    color: #2c3e50;
+  }
 
-#nav {
-  padding: 30px;
-}
+  @font-face {
+    font-family: FCMinimal;
+    src: url('../src/assets/font/FCMinimal.ttf');
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  body{
+    font-family: FCMinimal;
+    background-image: url('../src/assets/img/bg.jpg');  
+    background-size:cover;
+    background-repeat: no-repeat;    
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+  }
+   ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background-color: #003F63;
+    }
+  .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;      
+    height: 97vh;
+  }
+  
+  .container{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+      border-radius: 30px;
+      padding: 0px ;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  .p-nav{
+    padding: 100px 80px 80px 100px; 
+  }
+
+
+  .border-input{
+      border-radius: 30px;
+      font-size: 1.25em;
+  }
+  .text-blue{
+    color: #003F63;
+  }
+  .bg-blue{
+    background-color: #003F63;
+  }
+  .w-45{
+      width:45%;
+  }
+  .relative{
+    position: relative;
+  }
+  .absolute{
+    position: absolute;
+  }
+  .shadow{
+      box-shadow: 3px 5px 7px rgb(0 0 0 / 55%);      
+      border-radius: 30px;
+  }
+  .cursor{
+    cursor: pointer;
+  }
 </style>
