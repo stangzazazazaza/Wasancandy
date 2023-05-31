@@ -16,7 +16,6 @@
               <p class="f-28">{{dessert.name}}</p>
             </router-link>
            
-
         </div>
         <Cart/>
       </div>

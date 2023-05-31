@@ -28,7 +28,8 @@
                             <option value="3" >เพศที่ 3</option>
                         </select>
                     </div>                                        
-                    <input type="number" placeholder="เบอร์โทร" name="tel" v-model="tel" required/>                
+                    <input type="text" placeholder="เบอร์โทร" name="tel" v-model="tel" required/>      
+                                        
                     <button class="ghost">สมัครสมาชิก</button>
                 </form>
             </div>
@@ -134,6 +135,7 @@ export default {
                 return
             }
             if(this.tel.length != 10){
+                console.log(this.tel.length)
                 this.$swal.fire({
                     title: 'แจ้งเตือน',
                     text: 'ใส่หมายเลขโทรศัพท์ให้ถูกต้อง',
